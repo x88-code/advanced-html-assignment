@@ -1,91 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>x88_webpage</title>
-    </head>
-    <body>
-        <h1>ELEMENTS AND FORMS</h1>
-        <h2>ordered lists</h2>
-        <ol type="I">
-            <l1>books</l1>
-            <l1>pens</l1>
-            <l1>ink</l1>
-        </ol>
-        <h2>Ecternal image</h2>
-        <image src="https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="sample imaage" width="400">
-            <h2>contacts</h2>
-            <table border="1">
-            <tr>
-                <th>name</th>
-                <th>address</th>
-                <th>mobile</th>
-                <th>email</th>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>12th street</td>
-                <td>070001234</td>
-                <td>John@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Jane </td>
-                <td>456 St</td>
-                <td>07123459</td>
-                <td>jane@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Mark </td>
-                <td>789 Rd</td>
-                <td>0556667777</td>
-                <td>mark@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Lisa </td>
-                <td>101.p.o.box</td>
-                <td>054332566</td>
-                <td>lisa@gmail..com</td>
-            </tr>
-            <tr>
-                <td>Paul </td>
-                <td>202.p.o.box</td>
-                <td>0766665678</td>
-                <td>paul@gmail.com</td>
-            </table>
-            <h2>Registration Form</h2>
-<form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x88_webpage</title>
+    <!-- Link to external CSS (if any) can be added here -->
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>ELEMENTS AND FORMS</h1>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Books</li>
+        <li>Pens</li>
+        <li>Ink</li>
+    </ol>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required placeholder="Enter a password"><br><br>
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg" alt="Forest Girl" width="300" height="400">
 
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob"><br><br>
+    <!-- Table of Contacts -->
+    <h2>Contacts</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>12th Street</td>
+            <td>070001234</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>8th Avenue</td>
+            <td>070045678</td>
+            <td>jane@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mike</td>
+            <td>Park Lane</td>
+            <td>070078901</td>
+            <td>mike@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Main Street</td>
+            <td>070012345</td>
+            <td>alice@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>Highway Road</td>
+            <td>070056789</td>
+            <td>tom@gmail.com</td>
+        </tr>
+    </table>
 
-    <label>Gender:</label><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br><br>
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Input Fields with Labels -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-    <label for="country">Country:</label>
-    <select id="country" name="country">
-        <option value="kenya">Kenya</option>
-        <option value="uganda">Uganda</option>
-        <option value="tanzania">Tanzania</option>
-    </select><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
 
-    <label>Interests:</label><br>
-    <input type="checkbox" name="interests" value="coding"> Coding<br>
-    <input type="checkbox" name="interests" value="music"> Music<br>
-    <input type="checkbox" name="interests" value="sports"> Sports<br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required><br><br>
 
-    <input type="submit" value="Register">
-</form>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
 
-    </body>
+        <!-- Dropdown Menu -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
 
+        <!-- Radio Buttons -->
+        <p>Membership Type:</p>
+        <input type="radio" id="basic" name="membership" value="basic" required>
+        <label for="basic">Basic</label><br>
+
+        <input type="radio" id="premium" name="membership" value="premium" required>
+        <label for="premium">Premium</label><br><br>
+
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <input type="checkbox" id="coding" name="interest" value="coding">
+        <label for="coding">Coding</label><br>
+
+        <input type="checkbox" id="design" name="interest" value="design">
+        <label for="design">Design</label><br>
+
+        <input type="checkbox" id="gaming" name="interest" value="gaming">
+        <label for="gaming">Gaming</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+</body>
 </html>
